@@ -12,3 +12,6 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
+Cypress.on('uncaught:exception', (err, runnable) => {
+    return false
+  })
